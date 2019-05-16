@@ -6,20 +6,118 @@
 body{
   background:white;
 }
+.header-logo{
+  margin:10px;
+  display: inline-flex;
+  display:block;
+    padding:5px;
+  }
 
 
-/*Styles by Sudarshan */
 
-.main-pic img{
+.main img{
   width:37%;
   margin:15px;
   border-radius: 7px;
   height:250px;
   display: inline-flex;
 }
+.header-logo img{
+  width:30%;
+  opacity:9s;
+}
 
-/*Styling the card.*/
-.Card {
+.header-logo a{
+  cursor: pointer;
+}
+
+/*Styling breadcrumb pagination.*/
+.bread-crumb-pagination ul li{
+  list-style: none;
+  display: inline-flex;
+  padding:5px;
+  font-size: 16px;
+
+}
+
+.bread-crumb-pagination li+li:before{
+  content:"/\00a0\00a0";
+}
+
+.bread-crumb-pagination a{
+  text-decoration: none;
+  color:#e9281f;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*Styling the page title.*/
+.page-title h1{
+  font-family: 'Nunito', sans-serif;
+  background-color: #211545;
+  color:white;
+  border:40px;
+  width:100%;
+  padding:25px;
+
+}
+
+/*Styling Footer*/
+.footer{
+  border:1px solid grey;
+  bottom:2px;
+  position: bottom;
+  background-color:#211545;;
+  padding:25px;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+}
+
+
+
+/*Styling legal information at footer.*/
+.legal{
+	padding: 30px;
+  display:inline-flex;
+  color:white;
+  font-size: 30px;;
+}
+
+
+}
+
+/*Responsive CSS*/
+
+.logo-image{
+    float: left;
+    display:inline-flex;
+    height:20%;
+    width:20%;
+  }
+
+  @media screen and (min-width:600px){
+  .main img{
+    width:50%;
+    margin:15px;
+    border-radius: 10px;
+    height:450px;
+    display: inline;
+  }
+
+  .legal li {
+  	display: inline-flex;
+    padding:5px;
+  }
+  .logo-image{
+      float: left;
+      display:inline-flex;
+      height:20%;
+      width:20%;
+    }
+
+}
+
+.Design {
   display: inline-grid;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
@@ -29,30 +127,25 @@ body{
   border-top: 5px solid #211545;;
   border-bottom: 5px solid #d1d2da;
   margin:40px;
+
 }
 
-.Card:hover {
+.Design:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-/*Styling the header of the card.*/
-.Card h3{
+.Design h3{
   margin-left: 40px;
   font-size: 20px;
   font-family: monospace;
 }
-
-/*Styling the image used in the card.*/
- .Card img{
+ .Design img{
    margin-top: 10px;
    border-top-left-radius:5px;
    border-top-right-radius: 5px;
    height: 200px;
    margin-bottom: 20px;
  }
-
- /*Styling the body of the card.*/
-
  .container p{
      font-size: 18px;
 }
@@ -67,356 +160,21 @@ body{
   color:black;
   font-size: 18px;
 }
-
 .container ul li a:hover{
   color:#993232;
   letter-spacing: 1px;
 
 }
 
-/*Styling back to top button.*/
-.back-to-top{
-  background-color: #050e28;
-  border: none;
-  color: white;
-  padding:5px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  font-family: 'Nunito', sans-serif;
-  position: absolute;
-  margin-left: 40%;
-  margin-right: 40%;
-}
-
-/*Responsive design.*/
-@media screen and (min-width:600px){
-.main-pic img{
-  width:50%;
-  margin:15px;
-  border-radius: 10px;
-  height:450px;
-  display: inline;
-}
-
-.back-to-top{
-  display:none;
-}
-
-}
-
-
-.header-logo{
-  margin:10px;
-  display: inline-flex;
-  display:block;
-    padding:5px;
+@media screen and (min-width:550px) {
+  .Design, .p {
+    width:25%;
+    height: 40px;
   }
 
 
-  .header-logo img{
-    width:30%;
-    opacity:9s;
-  }
-
-  .header-logo a{
-    cursor: pointer;
-  }
-  .logo-image{
-      float: left;
-      display:inline-flex;
-      height:20%;
-      width:20%;
+  @media screen and (min-width:1000px) {
+    .container {
+      width:100%
     }
-
-    /*Styling Footer*/
-    .footer{
-      border:1px solid grey;
-      bottom:2px;
-      position: bottom;
-      background-color:#211545;;
-      padding:25px;
-      font-family: 'Nunito', sans-serif;
-      text-align: center;
     }
-
-
-
-    /*Styling legal information at footer.*/
-    .legal{
-    	padding: 30px;
-      display:inline-flex;
-      color:white;
-      font-size: 30px;;
-    }
-
-    @media screen and (min-width:600px){
-   .legal li {
-    	display: inline-flex;
-      padding:5px;
-    }
-    .logo-image{
-        float: left;
-        display:inline-flex;
-        height:20%;
-        width:20%;
-      }
-}
-
-
-/*Styling breadcrumb pagination.*/
-.bread-crumb-pagination ul li{
-  list-style: none;
-  display: inline-flex;
-  padding:5px;
-  font-size: 16px;
-}
-
-.bread-crumb-pagination li+li:before{
-  content:"/\00a0\00a0";
-}
-
-.bread-crumb-pagination a{
-  text-decoration: none;
-  color:#e9281f;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-/*Styling the page title.*/
-.page-title h1{
-  font-family: 'Nunito', sans-serif;
-  background-color: #040444;
-  color:white;
-}
-
-/*Fixing rows and columns for cards style.*/
-.column {
-  width: 100%;
-  display: block;
-  margin-bottom: 20px;
-}
-
-.row {margin: 0 -5px;}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.row a{
-  text-decoration: none;
-}
-
-/* Style the counter cards */
-.card {
-  color:black;
-  background:white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 4px;
-  text-align: center;
-  border-radius:10px 0 0 0;
-  border-top: 2px solid darkblue;
-  border-left: 2px solid darkblue;
-  margin: 10px;
-  font-family: 'Nunito', sans-serif;
-}
-
-/*Styling title of card. */
-.card>p.card_title{
-    color: #222;
-    font-size: 12px;
-    text-align: right;
-    text-transform: uppercase;
-}
-
-/*Rounding the border of image.*/
-.card img{
-  border-radius:10px 0 0 0;
-  width:100%;
-}
-
-.card:hover {
-  box-shadow: 0 24px 40px 0 #ffac00f2;
-}
-
-/*styling texts of card. */
-.container{
-  padding: 2px;
-  text-align:left;
-  font-family: 'Nunito', sans-serif;
-}
-
-/*Styling the navigation when hamburger menu is active.*/
-.nav-active{
-  position: absolute;
-  left:0vh;
-  height:72vh;
-  top:8vh;
-  background-color:#7b0409;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width:50%;
-}
-
-
-/*Styling Footer*/
-.footer{
-  margin:5px;
-  border:1px solid grey;
-  bottom:2px;
-  position: relative;
-  background-color: white;
-  padding:5px;
-  font-family: 'Nunito', sans-serif;
-}
-
-.footer-image{
-  display: flex;
-  float:left;
-  width:15%;
-  height: auto;
-}
-
-/*Styling legal information at footer.*/
-.legal{
-	padding: 10px;
-  display:inline-flex;
-}
-.legal li {
-	font-size: 11px;
-  list-style: none;
-}
-.legal a {
-	color: #014e9e;
-	text-decoration: none;
-  cursor: pointer;
-}
-
-/*Styling back to top button.*/
-.back-to-top{
-  background-color: #050e28;
-  border: none;
-  color: white;
-  padding:5px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  font-family: 'Nunito', sans-serif;
-  position: absolute;
-  margin-left: 40%;
-  margin-right: 40%;
-}
-
-/*Responsive CSS*/
-@media screen and (min-width:600px){
-
-  .nav{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    align-content: flex-start;
-    min-height:8vh;
-    background-color:#7b0409;
-    font-family: 'Nunito', sans-serif;
-  }
-
-  .login-learnline a{
-    color:white;
-    text-decoration: none;
-    letter-spacing:1px;
-    font-size:18px;
-    border:2px solid #4ab64a;
-    background-color:#4ab64a;
-  }
-
-  .nav-links{
-    display: flex;
-    justify-content: space-around;
-    width:100%;
-  }
-
-  .nav-links li{
-    list-style: none;
-  }
-
-  .nav-links a{
-    color:white;
-    text-decoration: none;
-    letter-spacing: 1px;
-    font-size: 14px;
-    font-weight:bold;
-    }
-
-  .nav-links a:hover{
-    letter-spacing: 2px;
-  }
-
-  .nav-active{
-    display:inline-flex;
-    justify-content: space-around;
-    align-items: center;
-    align-content: flex-start;
-    min-height:8vh;
-    background-color:#7b0409;
-    font-family: 'Nunito', sans-serif;
-    }
-
-  .hamburger{
-    display:none;
-    cursor: pointer;
-    color:white;
-    font-size: 20px;
-    font-weight: bold;
-  }
-
-  .column {
-    float: left;
-    width: 25%;
-    padding: 0 10px;
-  }
-
-  .legal li {
-  	display: inline-flex;
-    padding:5px;
-  }
-  .back-to-top{
-    display:none;
-  }
-}
-/*Styling breadcrumb pagination.*/
-.bread-crumb-pagination ul li{
-  list-style: none;
-  display: inline-flex;
-  padding:5px;
-  font-size: 16px;
-
-}
-
-.bread-crumb-pagination li+li:before{
-  content:"/\00a0\00a0";
-}
-
-.bread-crumb-pagination a{
-  text-decoration: none;
-  color:#e9281f;
-  font-weight: bold;
-  cursor: pointer;
-}
-/*Styling the page title.*/
-.page-title h1{
-  font-family: 'Nunito', sans-serif;
-  background-color: #211545;
-  color:white;
-  border:40px;
-  width:100%;
-  padding:25px;
-
-}
