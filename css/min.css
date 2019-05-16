@@ -103,6 +103,10 @@ body{
     height:450px;
     display: inline;
   }
+	  
+ .back-to-top{
+  display:none;
+}
 
   .legal li {
   	display: inline-flex;
