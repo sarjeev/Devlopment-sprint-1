@@ -13,6 +13,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+
 }
 #cssnav:after,
 #cssnav > ul:after {
@@ -22,18 +23,22 @@
   visibility: hidden;
   line-height: 0;
   height: 0;
+
 }
 #cssnav {
   width: auto;
-  border-bottom: 3px solid #47c9af;
+  border-bottom: 3px solid #211545;
   font-family: Raleway, sans-serif;
   line-height: 1;
+
 }
 #cssnav ul {
   background: #ffffff;
+
 }
 #cssnav > ul > li {
   float: left;
+
 }
 #cssnav.align-center > ul {
   font-size: 0;
@@ -53,8 +58,9 @@
 #cssnav > ul > li > a {
   z-index: 2;
   padding: 18px 25px 12px 25px;
-  font-size: 15px;
+  font-size: 25px;
   font-weight: 400;
+  font-weight: bolder;
   text-decoration: none;
   color: #444444;
   -webkit-transition: all .2s ease;
@@ -93,11 +99,13 @@
 #cssnav > ul > li.active > a:after,
 #cssnav > ul > li:hover > a:after,
 #cssnav > ul > li > a:hover:after {
-  background: #47c9af;
+  background: #211545;
 }
-input {
-  background: url("http://kodyrabatowe.wp.pl/img/ico/search_gr.png");
-  background-repeat: no-repeat;
-  width: 200px;
-  height: 36px;
+input#search {
+    background-image: url("search.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-indent: 50px;
+    width: 200px;
+    height: 36px;
 }
