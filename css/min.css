@@ -6,6 +6,109 @@
 body{
   background:white;
 }
+
+
+/*Styles by Sudarshan */
+
+.main-pic img{
+  width:37%;
+  margin:15px;
+  border-radius: 7px;
+  height:250px;
+  display: inline-flex;
+}
+
+/*Styling the card.*/
+.Card {
+  display: inline-grid;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background-color: white;
+  min-height: 500px;
+  border-radius: 20px;
+  border-top: 5px solid #211545;;
+  border-bottom: 5px solid #d1d2da;
+  margin:40px;
+}
+
+.Card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/*Styling the header of the card.*/
+.Card h3{
+  margin-left: 40px;
+  font-size: 20px;
+  font-family: monospace;
+}
+
+/*Styling the image used in the card.*/
+ .Card img{
+   margin-top: 10px;
+   border-top-left-radius:5px;
+   border-top-right-radius: 5px;
+   height: 200px;
+   margin-bottom: 20px;
+ }
+
+ /*Styling the body of the card.*/
+
+ .container p{
+     font-size: 18px;
+}
+
+ .container ul li{
+   font-size: 18px;
+   padding-top: 10px;
+   color:brown;
+   margin-left:15px;
+}
+.container ul li a{
+  color:black;
+  font-size: 18px;
+}
+
+.container ul li a:hover{
+  color:#993232;
+  letter-spacing: 1px;
+
+}
+
+/*Styling back to top button.*/
+.back-to-top{
+  background-color: #050e28;
+  border: none;
+  color: white;
+  padding:5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  position: absolute;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+/*Responsive design.*/
+@media screen and (min-width:600px){
+.main-pic img{
+  width:50%;
+  margin:15px;
+  border-radius: 10px;
+  height:450px;
+  display: inline;
+}
+
+.back-to-top{
+  display:none;
+}
+
+}
+
+
 .header-logo{
   margin:10px;
   display: inline-flex;
