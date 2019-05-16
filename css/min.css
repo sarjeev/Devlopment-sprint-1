@@ -300,3 +300,22 @@ body{
     display:none;
   }
 }
+/*Styling breadcrumb pagination.*/
+.bread-crumb-pagination ul li{
+  list-style: none;
+  display: inline-flex;
+  padding:5px;
+  font-size: 16px;
+
+}
+
+.bread-crumb-pagination li+li:before{
+  content:"/\00a0\00a0";
+}
+
+.bread-crumb-pagination a{
+  text-decoration: none;
+  color:#e9281f;
+  font-weight: bold;
+  cursor: pointer;
+}
