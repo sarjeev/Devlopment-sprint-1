@@ -29,6 +29,18 @@ body{
       width:20%;
     }
 
+    @media screen and (min-width:600px){
+   .legal li {
+    	display: inline-flex;
+      padding:5px;
+    }
+    .logo-image{
+        float: left;
+        display:inline-flex;
+        height:20%;
+        width:20%;
+      }
+}
 /*Styling breadcrumb pagination.*/
 .bread-crumb-pagination ul li{
   list-style: none;
