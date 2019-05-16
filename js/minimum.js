@@ -10,6 +10,7 @@ const navSlide = () => {
 
 navSlide();
 
+/*JAvaScripts by Sudarshan */
 /*Function to navigate back to top*/
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
