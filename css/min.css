@@ -319,3 +319,13 @@ body{
   font-weight: bold;
   cursor: pointer;
 }
+/*Styling the page title.*/
+.page-title h1{
+  font-family: 'Nunito', sans-serif;
+  background-color: #211545;
+  color:white;
+  border:40px;
+  width:100%;
+  padding:25px;
+
+}
